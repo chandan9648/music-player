@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>music player</title>
+    <link rel="stylesheet" href="music.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="ring">
+            <i class="ri-arrow-left-wide-line"></i>
+          </div>
+          <div class="ring">
+            <i class="ri-menu-line"></i>
+          </div>
+        </nav>
+        <img src="music pic.jpg" class="song-img" />
+        <h1>MUSIC BOOM</h1>
+        <p>Yamuna ji kari kari radha gori gori.</p>
+        <audio id="song">
+          <source src="audio.mp3" type="audio/mp3" />
+        </audio>
+        <input type="range" value="0" id="progress" />
+        <div class="control">
+          <div><i class="ri-arrow-left-circle-fill"></i></div>
+          <div onclick="playPause()">
+            <i class="ri-play-circle-fill" id="ctrlIcon"></i>
+          </div>
+          <!-- <div><i class="ri-pause-circle-fill"></i></div> -->
+          <div><i class="ri-arrow-right-circle-fill"></i></div>
+        </div>
+      </div>
+    </div>
+    <script src="music.js"></script>
+  </body>
+</html>
